@@ -8,6 +8,7 @@ ARG APP="app.pl"
 COPY templates ./templates
 COPY ${APP} .
 
+COPY cpanfile .
 RUN cpanm --installdeps .
 EXPOSE 3000
 # Runs application with multiple threads
