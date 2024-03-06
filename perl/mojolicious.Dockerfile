@@ -1,4 +1,4 @@
-FROM perl:5.36-bullseye
+FROM perl:5.38.2-bullseye
 RUN cpan App::cpanminus
 WORKDIR /service
 COPY lib ./lib
